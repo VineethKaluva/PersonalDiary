@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.anchary.personaldiary">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WelcomeScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.anchary.personaldiary.Notes"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.anchary.personaldiary.Notes2"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.anchary.personaldiary.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.anchary.personaldiary.ReminderActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.anchary.personaldiary.ForgotPassword"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.anchary.personaldiary.LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.anchary.personaldiary.OptionsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.anchary.personaldiary.RegisterActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.anchary.personaldiary.PasswordChange"
+            android:label="@string/app_name" >
+        </activity>
+        <receiver android:name=".AlarmReceiver" android:process=":remote" />
+
+    </application>
+
+</manifest>

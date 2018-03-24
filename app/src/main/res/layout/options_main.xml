@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccffee">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/content_main" />
+
+    <Button
+        android:id="@+id/Task_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Daily_button"
+        android:padding="30dp"
+        android:layout_margin="10dp"
+        android:text="Task Reminder" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:text="PERSONAL DIARY"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/Daily_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="Daily Activity"
+        android:layout_marginTop="47dp"
+
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/Task_button"
+        android:layout_alignStart="@+id/Task_button"
+        android:layout_alignRight="@+id/Task_button"
+        android:layout_alignEnd="@+id/Task_button" />
+
+    <Button
+        android:id="@+id/Exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="Exit"
+        android:layout_below="@+id/Task_button"
+        android:layout_alignLeft="@+id/Task_button"
+        android:layout_alignStart="@+id/Task_button"
+        android:layout_alignRight="@+id/Task_button"
+        android:layout_alignEnd="@+id/Task_button" />
+
+</RelativeLayout>

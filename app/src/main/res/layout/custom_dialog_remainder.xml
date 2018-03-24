@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dip"
+    android:background="#ffffff" >
+
+    <Button
+        android:id="@+id/remainder_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timePicker_dialog"
+        android:layout_centerHorizontal="true"
+        android:text="Submit" />
+
+    <EditText
+        android:id="@+id/etcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter content"
+        android:layout_below="@+id/etTextview"
+        android:layout_alignLeft="@+id/etTextview"
+        android:layout_alignStart="@+id/etTextview"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/etTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter Reminder"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Imp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Imp"
+        android:layout_alignBaseline="@+id/date_in_dialog"
+        android:layout_alignBottom="@+id/date_in_dialog"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/date_in_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="DATE"
+        android:inputType="date"
+        android:layout_marginRight="58dp"
+        android:layout_marginEnd="58dp"
+        android:layout_below="@+id/etcontent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <requestFocus />
+    </EditText>
+
+    <TimePicker
+        android:id="@+id/timePicker_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_in_dialog"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

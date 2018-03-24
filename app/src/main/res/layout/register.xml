@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccffee" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Register"
+
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_cpassword"
+        android:layout_alignRight="@+id/et_cpassword"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:background="#ffffff"
+        android:padding="14px"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_cpassword"
+        android:layout_alignLeft="@+id/et_cpassword"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="Password"
+        android:background="#ffffff"
+        android:padding="14px"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/et_cpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="Confirm password"
+        android:background="#ffffff"
+        android:padding="14px"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/sp_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_email"
+        android:layout_alignRight="@+id/et_cpassword"
+        android:layout_below="@+id/et_email"
+        android:layout_marginTop="52dp"
+        android:text="SUBMIT" />
+
+</RelativeLayout>

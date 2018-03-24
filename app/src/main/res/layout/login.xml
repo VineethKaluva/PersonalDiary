@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccffee" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Personal Diary"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignRight="@+id/password"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="48dp"
+        android:text="Done" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="3dp" />
+
+    <TextView
+        android:id="@+id/tvhint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:text="Hint:for first time password->0000"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#33cc33" />
+
+    <TextView
+        android:id="@+id/tvpswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvhint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:text="Click here to Change password"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv_forgotpswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/login"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="16dp"
+        android:textStyle="italic"
+        android:text="forgot password?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
